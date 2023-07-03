@@ -1,0 +1,21 @@
+.aside-media{
+    width: 40rem;
+    height: 2.4rem;
+    position:absolute;
+    top:22.6rem;
+    left:-17rem;
+    transform: rotate(-90deg);
+    @include font ($size:1.6rem, $weight:bold);
+
+    @media all and (max-width: 1250px) {
+        display: none;
+    }
+}
+
+.aside-media__line {
+    display: inline-block;
+    width:7rem;
+    height: 0.2rem;
+    margin:auto 1.5rem auto 1.5rem;
+    background-color: $color-dark;
+}

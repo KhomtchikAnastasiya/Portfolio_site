@@ -1,0 +1,54 @@
+.benefit__content {
+    padding: 12rem 0 12rem;
+
+    @media all and (max-width: $break-point-2) {
+        padding: 4rem 0 4rem;
+    }
+}
+
+.benefit__title {
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.resume-container {
+    padding: 6rem 8.9rem 0 6.5rem;
+
+    @media all and (max-width: $break-point-1) {
+        padding:0 ;
+
+        >* {
+            flex-basis: 48%;
+        }
+    }
+}
+
+.layout-2-column.resume-container {
+
+    @media all and (max-width: $break-point-1) {
+
+        >* {
+            flex-basis: 48%;
+        }
+    }
+
+    @media all and (max-width: $break-point-2) {
+
+        >* {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.benefit__group {
+    padding-left: 4.3rem;
+}
+
+.benefit__item {
+    padding-top: 4.5rem;
+
+    & .subtitle {
+        margin-top: 0;
+    }
+}
+

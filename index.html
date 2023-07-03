@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfolio</title>
+    <link href="./sass/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">	
+  </head>
+  <body>
+    <header class="header">
+        <span class="hamburger" id="hamburger">
+            <span class="hamburger__line"></span>
+        </span>
+    </header>
+    <nav class="navigation modal-glass " id="navigation" >
+        <div class="modal-window">
+            <span class="modal-window__hamburger" id="modal-window__hamburger">
+            </span>
+            <ul class="navigation_list">
+                <li class="navigation__link">ПРО МЕНЯ</li>
+                <li class="navigation__link">МОЙ ОПЫТ</li>
+                <li class="navigation__link">МОИ НАВЫКИ</li>
+                <li class="navigation__link">МОИ РАБОТЫ</li>
+                <li class="navigation__link">ПРАЙС-ЛИСТ</li>
+                <li class="navigation__link">КОНТАКТЫ</li>
+            </ul>
+            <div class="navigation_media">
+                <a href="https://github.com/" target="_blank"><span class="ico ico_aside ico_git"></span></a>
+                <a href="https://www.instagram.com/" target="_blank"><span class="ico ico_aside ico_instagram"></span></a>
+                <a href="https://www.facebook.com/" target="_blank"><span class="ico ico_aside ico_facebook"></span></a>
+            </div>
+        </div>
+    </nav>
+    <section class="promo">
+        <aside class="aside-media">
+            <div>
+                <span>Социальные сети</span>
+                <span class="aside-media__line"></span>
+                <a href="https://github.com/" target="_blank"><span class="ico ico_aside ico_git"></span></a>
+                <a href="https://www.instagram.com/" target="_blank"><span class="ico ico_aside ico_instagram"></span></a>
+                <a href="https://www.facebook.com/" target="_blank"><span class="ico ico_aside ico_facebook"></span></a>
+            </div>
+        </aside>
+        <div class="wrapper">
+            <div class="promo__content">
+                <div class="section-title section-title_left">
+                    <h4 class="section-title_left">Меня зовут Александра Смит</h4>
+                </div>
+                <h1>Я web-разработчик из города Москва</h1>
+                <button type="button" class="button">Портфолио</button>
+                <a class="button-link" href="#">Про меня</a>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="about-me">
+        <div class="wrapper">
+            <img class="about-me__photo" src="./img/Photo.jpg" alt="photo">
+            <div class="about-me__content">
+                <h4 class="section-header section-header_left">Про меня</h4>
+                <h2>Меня зовут Александра</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div class="layout-2-column">
+                    <div class="about-me__skill-group block-item">
+                        <span class="ico ico_web-dev"></span>
+                        <h5>Web-разработка</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="about-me__skill-group block-item">
+                        <span class="ico ico_mobile-dev"></span>
+                        <h5>Разработка приложений</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="about-me__skill-group block-item">
+                        <span class="ico ico_design"></span>
+                        <h5>UI/UX Design</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --> 
+    <section class="benefit">
+        <div class="wrapper">
+            <div class="benefit__content">
+                <div class="section-title section-title_center">
+                    <h4 class="section-title_center">Опыт</h4>
+                </div>
+                <h2 class="benefit__title">Чем я буду полезна</h2>
+                <hr>
+                <div class="layout-2-column resume-container">
+                    <div class="benefit__group">
+                        <h3>Образование</h3>
+                        <div class="benefit__item block-item">
+                            <span class="benefit__ico"><span class="ico ico_benefit ico_uni"></span></span>
+                            <h5>МГТУ им. Н. Э. Баумана</h5>
+                            <p class="subtitle">Диплом магистра | Москва (2014-2020)</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
+                        </div>
+                        <div class="benefit__item block-item">
+                            <span class="benefit__ico"><span class="ico ico_benefit ico_courses"></span></span>
+                            <h5>Udemy</h5>
+                            <p class="subtitle">Курсы по Web-разработке</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
+                        </div>
+                    </div>
+                    <div class="benefit__group">
+                        <h3>Опыт работы</h3>
+                        <div class="benefit__item block-item">
+                            <span class="benefit__ico"><span class="ico ico_benefit ico_developer"></span></span>
+                            <h5>Front-End Developer</h5>
+                            <p class="subtitle">EPAM | Москва (2018-2019)</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
+                        </div>
+                        <div class="benefit__item block-item">
+                            <span class="benefit__ico"><span class="ico ico_benefit ico_designer"></span></span>
+                            <h5>UI/UX Designer</h5>
+                            <p class="subtitle">Squad Team | Москва (2018)</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="skills">
+        <div class="wrapper">
+            <h4 class="section-header section-header_center">Навыки</h4>
+            <h2>Что я использую в работе</h2>
+            <hr>
+            <div class="layout-4-column">
+                <div class="skills__group">
+                    <span class="ico ico_html"></span> 
+                    <h5>HTML5</h5>
+                    <p>Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</p>
+                </div>
+                <div class="skills__group">
+                    <span class="ico ico_css"></span> 
+                    <h5>CSS3</h5>
+                    <p>Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
+                </div>
+                <div class="skills__group">
+                    <span class="ico ico_js"></span> 
+                    <h5>Java Script</h5>
+                    <p>Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</p>
+                </div>
+                <div class="skills__group">
+                    <span class="ico ico_jquery"></span> 
+                    <h5>Jquery</h5>
+                    <p>Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</p>
+                </div>
+                <div class="skills__group">
+                    <span class="ico ico_react"></span> 
+                    <h5>React</h5>
+                    <p>Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                </div>
+                <div class="skills__group">
+                    <span class="ico ico_node"></span> 
+                    <h5>Node.js</h5>
+                    <p>Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</p>
+                </div>
+                <div class="skills__group">
+                    <span class="ico ico_mongo"></span> 
+                    <h5>Mongo.db</h5>
+                    <p>Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</p>
+                </div>
+            </div>
+            <div class="layout-3-column skills__progress">
+                <div class="skills__progress-item">
+                    <h4 class="section-header section-header_left">Создание сайтов<span>100%</span></h4>
+                    <progress max="100" value="100">100%</progress>
+                </div>
+                <div class="skills__progress-item">
+                    <h4 class="section-header section-header_left">Создание приложений<span>85%</span></h4>
+                    <progress max="100" value="85">85%</progress>
+                </div>
+                <div class="skills__progress-item">
+                    <h4 class="section-header section-header_left">Работа с данными<span>90%</span></h4>
+                    <progress max="100" value="90">90%</progress>
+                </div>
+                <div class="skills__progress-item">
+                    <h4 class="section-header section-header_left">Креативность<span>75%</span></h4>
+                    <progress max="100" value="75">75%</progress>
+                </div>
+                <div class="skills__progress-item">
+                    <h4 class="section-header section-header_left">Создание дизайна<span>90%</span></h4>
+                    <progress max="100" value="90">90%</progress>
+                </div>
+                <div class="skills__progress-item">
+                    <h4 class="section-header section-header_left">Soft skills<span>95%</span></h4>
+                    <progress max="100" value="95">95%</progress>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="wrapper">
+            <h4 class="section-header section-header_center">Портфолио</h4>
+            <h2>Мои работы</h2>
+            <hr>
+            <div class="layout-4-column">
+                <div class="portfolio__item">
+                    <img src="./img/portfolio/uber.jpg" alt="uber">
+                </div>
+                <div class="portfolio__item">
+                    <img src="./img/portfolio/pulse.jpg" alt="pulse">
+                </div>
+                <div class="portfolio__item">
+                    <img src="./img/portfolio/bread.jpg" alt="bread">
+                </div>
+                <div class="portfolio__item">
+                    <img src="./img/portfolio/plans.jpg" alt="plans">
+                </div>
+                <div class="portfolio__item">
+                    <img src="./img/portfolio/ipad.jpg" alt="ipad">
+                </div>
+                <div class="portfolio__item">
+                    <img src="./img/portfolio/mac.jpg" alt="mac">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price-list">
+        <div class="wrapper">
+            <h4 class="section-header section-header_center">Прайс-лист</h4>
+            <hr>
+            <div class="layout-2-column">
+                <div class="price-list__item">
+                    <h4 class="section-header section-header_near">Landing-page<span>от 8000 руб.</span></h4>
+                    <p>Одностраничный сайт для презентации услуг/товаров/...</p>
+                </div>
+                <div class="price-list__item">
+                    <h4 class="section-header section-header_near">Корпоративный сайт<span>от 20000 руб.</span></h4>
+                    <p>Сайт для вашего бизнеса или компании</p>
+                </div>
+                <div class="price-list__item">
+                    <h4 class="section-header section-header_near">Интернет-магазин<span>от 30000 руб.</span></h4>
+                    <p>Инструмент для ваших продаж в сети</p>
+                </div>
+                <div class="price-list__item">
+                    <h4 class="section-header section-header_near">Web-приложение<span>от 28000 руб.</span></h4>
+                    <p>Приложение внутри браузера для лучшего комфорта</p>
+                </div>
+                <div class="price-list__item">
+                    <h4 class="section-header section-header_near">Android/IOS Приложение<span>от 25000 руб.</span></h4>
+                    <p>Приложение для смартфона любой ОС</p>
+                </div>
+                <div class="price-list__item">
+                    <h4 class="section-header section-header_near">Дизайн<span>Индивидуально</span></h4>
+                    <p>Создам дизайн для вашего сайта/приложения...</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="contacts">
+        <div class="wrapper contacts_wrapper">
+            <img class="contacts__photo" src="./img/Photo.jpg" alt="photo">
+            <div class="contacts__content">
+                <div class="section-title section-title_left">
+                    <h4 class="section-title_left">Контакты</h4>
+                </div>
+                <h2>Свяжитесь со мной</h2>
+                <hr>
+                <h4 class="contacts__text">Любым удобным для вас способом:</h4>
+                <a href="https://www.facebook.com/" target="_blank"><span class="ico ico_media ico_facebook"></span></a> 
+                <a href="https://web.telegram.org/k/" target="_blank"><span class="ico ico_media ico_telegram"></span></a>
+                <a href="https://www.instagram.com/" target="_blank"><span class="ico ico_media ico_instagram"></span></a>
+                <h4 class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</h4>
+                <form class="contacts__form" action method="post" name="contacts_form">
+                    <div class="layout-2-column contacts__form-layout">
+                        <div class="contacts__form-item nameTag">
+                            <label for="name" >Ваше имя</label>
+                            <input type="text" name="name" placeholder="Иван">
+                        </div>
+                        <div class="contacts__form-item">
+                            <label for="email">Ваша почта</label>
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="contacts__form-item">
+                        <label for="message">Ваше сообщение</label>
+                        <textarea name="message"></textarea>
+                    </div>
+                    <div class="contacts__form-policy-wrapper">
+                        <input class="contacts__form-policy contacts__form-item" type="checkbox" name="policy" id="policy">
+                        <label for="policy" class="contacts__form-policy contacts__form-item">Я согласен(а) с <a href=#> политикой конфиденциальности</a></label>
+                    </div>
+                    <button type="submit" class="button">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-main;
+    @include font ($size:1.2rem);
+}
+
+h1 {
+    @include font ($size:4.8rem, $weight:bold);
+    @extend %margin;
+
+    @media all and (max-width: $break-point-2) {
+        @include font ($size:2.6rem, $weight:bold);  
+    }
+}
+
+h2 {
+    @include font ($size:3.6rem, $weight:bold);
+    @extend %margin;
+
+    @media all and (max-width: $break-point-2) {
+        @include font ($size:2.4rem, $weight:bold);
+        margin: 2rem 0 1.5rem 0;  
+    }
+    
+}
+
+h3 {
+    @include font ($size:2.0rem, $weight:bold);
+    @extend %margin;
+}
+
+h4 {
+    @include font ($size:1.6rem, $weight:bold);
+    @extend %margin;
+
+    @media all and (max-width: $mobile-width) {
+        @include font ($size:1.6rem, $weight:bold);  
+    }
+}
+
+h5 {
+    @include font ($size:1.4rem, $weight:bold);
+    @extend %margin;
+}
+.section-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 3.6rem;
+    & h4{
+        position: relative;
+        line-height: 3.6rem;
+        z-index: 2;
+        &.section-title_left::before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            background-color: $color-primary;
+            border-radius: 50%;
+            height: 3.6rem;
+            width: 3.6rem;
+            top: 0;
+            left: -1rem;
+            z-index: -1;
+        }
+        &.section-title_center{
+            text-align: center;
+        }
+        &.section-title_center::before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            background-color: $color-primary;
+            border-radius: 50%;
+            height: 3.6rem;
+            width: 3.6rem;
+            top: 0;
+            left: calc(50% - 1.8rem);
+            z-index: -1;
+        }
+    }
+    
+}
+
+.button {
+    padding: 1.2rem 2.5rem 1.2rem 2.5rem;
+    background-color: $color-primary;
+    border: none;
+    @include font ($size:1.4rem, $weight:bold);
+    cursor: pointer;
+}
+
+.button-link {
+    @include font ($size:1.4rem, $weight:bold);
+    color: $color-dark;
+    text-decoration: none;
+}
+
+hr {
+    width:6rem;
+    height:0.3rem;
+    border:none;
+    background-color: $color-primary;
+}
+

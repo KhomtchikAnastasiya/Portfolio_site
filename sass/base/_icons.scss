@@ -1,0 +1,85 @@
+.ico {
+    display: inline-block;
+}
+
+.ico_media {
+    cursor: pointer;
+    height:3rem;
+    width: 3rem;
+    margin: 2rem 2.5rem 0 0;
+}
+
+.ico.ico_aside {
+    cursor: pointer;
+    height:2rem;
+    width: 2rem;
+    margin: 0 1.5rem 0 0;
+    background-size: contain;
+}
+
+.ico_facebook {
+    background-image: url(../img/icons/Facebook.svg);
+}
+
+.ico_telegram {
+    background-image: url(../img/icons/Telegram.svg);
+}
+
+.ico_instagram {
+    background-image: url(../img/icons/Instagram.svg);
+}
+
+.ico_git {
+    background-image: url(../img/icons/Github.svg);
+}
+
+.benefit__ico {
+    display: inline-flex;
+    height: 3.6rem;
+    width: 3.6rem;
+    position: relative;
+    float: left;
+    margin: 0 2rem 0 0;
+}
+
+.ico_uni {
+    background-image: url(../img/icons/University.svg);
+    height:2.5rem;
+    width: 1.979rem; 
+}
+
+.ico_courses {
+    background-image: url(../img/icons/Courses.svg);
+    height:2.343rem;
+    width: 2.5rem; 
+}
+
+.ico_developer {
+    background-image: url(../img/icons/Developer.svg);
+    height:2.5rem;
+    width: 2.5rem; 
+}
+
+.ico_designer {
+    background-image: url(../img/icons/designer.svg);
+    height:2.5rem;
+    width: 2.5rem; 
+}
+
+.ico_benefit {
+    position: absolute;
+    bottom:0;
+    right:0;
+    &::before {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        background-color: $color-primary;
+        border-radius: 50%;
+        height: 3.6rem;
+        width: 3.6rem;
+        bottom: 0.3rem;
+        right:0;
+        z-index: -1;
+    }
+}

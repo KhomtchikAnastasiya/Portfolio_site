@@ -1,0 +1,41 @@
+.promo {
+    position: relative;
+    height: 80rem;
+    max-width:192rem;
+    margin: auto;
+    background-image: url(../img/Background.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    .wrapper {
+        height:100%;
+    }
+
+    @media all and (max-width: $break-point-1) {
+        height: 64rem;
+        background-position: 60% 0%;
+    }
+
+}
+
+.promo__content {
+    padding: 20.6rem 0 0 0;
+    width:53.2rem;
+    & h1 {
+        margin: 0 0 3.4rem 0;
+    }
+
+    @media all and (max-width: $break-point-2) {
+        padding: 20rem 0 0 0;
+        width:29rem;
+
+        & h1 {
+            margin: 0 0 3.2rem 0;
+        }
+    }
+}
+
+.promo .button-link {
+    margin: 0 0 0 4.4rem;
+}
+
+

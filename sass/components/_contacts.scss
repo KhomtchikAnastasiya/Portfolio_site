@@ -1,0 +1,129 @@
+.contacts_wrapper {
+    padding-bottom: 9.1rem;
+
+    @media all and (max-width: $break-point-2) {
+        padding-bottom: 5rem;
+    }
+}
+
+.contacts__photo {
+    float: left;
+    margin-right: 6.8rem;
+
+    @media all and (max-width: $break-point-1) {
+        display: none;   
+    }
+}
+
+.contacts__content {
+    margin-left: 46.8rem;
+    text-align: left;
+    & .contacts__text {
+        margin: 2rem 0 0 0;
+
+        @media all and (max-width: $mobile-width) {
+            @include font ($size:1.4rem, $weight:bold);  
+        }
+    }
+
+    & hr {
+        margin:0;
+    }
+
+    @media all and (max-width: $break-point-1) {
+        margin:0 ;
+    }
+}
+
+.contacts__form {
+    margin: 2rem 3.5rem 0 0;
+
+    >* {
+        margin: 0 0 3rem 0;
+        @include font ($size:1.2rem, $weight:medium);
+        color: $color-dark;
+
+        @media all and (max-width: $break-point-2) {
+                margin: 0;
+        }
+    }
+
+    & input {
+        height:4.5rem;
+        width: 100%;
+        padding: 1.3rem 2rem 1.3rem 2rem;
+    }
+
+    & textarea {
+        height: 19rem;
+        width: 100%;
+        resize: none;
+        padding: 1.3rem 2rem 1.3rem 2rem;
+    }
+
+    & button {
+        @include font ($size:1.4rem, $weight:bold);
+        margin: 0;
+        
+        @media all and (max-width: $break-point-2) {
+            display: block;
+            margin: 0 auto 0 auto;
+        }
+
+    }
+
+    @media all and (max-width: $break-point-1) {
+        margin: 2rem 0 0 0;;
+    }
+}
+
+.contacts__form-item {
+    position: relative;
+
+    & label {
+        position: absolute;
+        display: inline-block;
+        top: -0.9rem;
+        left:1.2rem;
+        background-color: white;
+        padding: 0 0.8rem 0 0.8rem;
+    }
+
+    @media all and (max-width: $break-point-2) {
+        margin-bottom: 2rem;
+}
+}
+
+.layout-2-column.contacts__form-layout {
+        >* {
+        flex-basis: 48%;
+    }
+
+    @media all and (max-width: $break-point-2) {
+        >* {
+            flex-basis: 100%;
+        }
+    }
+
+}
+
+.contacts__form-policy {
+    display: none;
+
+    @media all and (max-width: $break-point-2) {
+        display: inline;
+    }
+}
+
+input.contacts__form-policy {
+    width:1.1rem;
+    height: 1.1rem;
+    float:left;
+    margin-right:1rem;
+}
+
+
+.contacts__form-policy-wrapper {
+    width:19rem;
+    margin: 0 auto 2rem auto;
+}

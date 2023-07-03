@@ -1,0 +1,48 @@
+.hamburger {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 21px;
+    &::before {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        background-color: $color-hamburger;
+        height: 3px;
+        width: 30px;
+        top: 0;
+        right: 0;
+    }
+    &::after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        background-color: $color-hamburger;
+        height: 3px;
+        width: 30px;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.hamburger__line {
+    display: inline-block;
+    position: absolute;
+    background-color: $color-hamburger;
+    height: 3px;
+    width: 100%;
+    top: 9px;
+    left:0;
+}
+
+.modal-window__hamburger {
+    display: none;
+    position: absolute;
+    top: 2.4rem;
+    right: 2.5rem;
+    cursor: pointer;
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/icons/Close.svg);
+}
