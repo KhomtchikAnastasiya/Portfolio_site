@@ -60,3 +60,6 @@ function validateField(eo) {
         return;
     }
 }
+
+
+console.log("Пример, как бы выглядел запрос для отправки данных из формы на сервер: www.script-obrabotchik.com/?name=Ivan&email=ivan@gmail.com&message=Hi")

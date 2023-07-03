@@ -787,13 +787,53 @@ hr {
 
 .benefit__group {
   padding-left: 4.3rem;
+  display: inline-block;
+  position: relative;
+}
+.benefit__group::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #FFA501;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  top: 9px;
+  left: 0;
+}
+
+.benefit__group-line {
+  display: inline-block;
+  position: relative;
+}
+.benefit__group-line::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #000000;
+  height: 1px;
+  width: 343px;
+  transform: rotate(90deg);
+  top: 182px;
+  left: -207px;
 }
 
 .benefit__item {
   padding-top: 4.5rem;
+  position: relative;
 }
 .benefit__item .subtitle {
   margin-top: 0;
+}
+.benefit__item::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #000000;
+  height: 1px;
+  width: 36px;
+  top: 60px;
+  left: -36px;
 }
 
 .contacts_wrapper {

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset=UTF-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Portfolio</title>
     <link href="./sass/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,7 +92,7 @@
                 <h2 class="benefit__title">Чем я буду полезна</h2>
                 <hr>
                 <div class="layout-2-column resume-container">
-                    <div class="benefit__group">
+                    <div class="benefit__group"><span class="benefit__group-line"></span>
                         <h3>Образование</h3>
                         <div class="benefit__item block-item">
                             <span class="benefit__ico"><span class="ico ico_benefit ico_uni"></span></span>
@@ -107,7 +107,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo.</p>
                         </div>
                     </div>
-                    <div class="benefit__group">
+                    <div class="benefit__group"><span class="benefit__group-line"></span>
                         <h3>Опыт работы</h3>
                         <div class="benefit__item block-item">
                             <span class="benefit__ico"><span class="ico ico_benefit ico_developer"></span></span>
@@ -269,20 +269,20 @@
                 <a href="https://web.telegram.org/k/" target="_blank"><span class="ico ico_media ico_telegram"></span></a>
                 <a href="https://www.instagram.com/" target="_blank"><span class="ico ico_media ico_instagram"></span></a>
                 <h4 class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</h4>
-                <form class="contacts__form" action method="post" name="contacts_form">
+                <form class="contacts__form" action="#" method="get" name="contacts_form">
                     <div class="layout-2-column contacts__form-layout">
                         <div class="contacts__form-item nameTag">
                             <label for="name" >Ваше имя</label>
-                            <input type="text" name="name" placeholder="Иван">
+                            <input type="text" name="name" placeholder="Иван" id="name">
                         </div>
                         <div class="contacts__form-item">
                             <label for="email">Ваша почта</label>
-                            <input type="email" name="email">
+                            <input type="email" name="email" id="email">
                         </div>
                     </div>
                     <div class="contacts__form-item">
                         <label for="message">Ваше сообщение</label>
-                        <textarea name="message"></textarea>
+                        <textarea name="message" id="message"></textarea>
                     </div>
                     <div class="contacts__form-policy-wrapper">
                         <input class="contacts__form-policy contacts__form-item" type="checkbox" name="policy" id="policy">

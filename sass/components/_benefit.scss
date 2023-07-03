@@ -42,13 +42,55 @@
 
 .benefit__group {
     padding-left: 4.3rem;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        background-color: $color-primary;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        top: 9px;
+        left: 0;
+    }
+}
+
+.benefit__group-line {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    background-color: $color-dark;
+    height: 1px;
+    width: 343px;
+    transform: rotate(90deg);
+    top: 182px;
+    left: -207px;
+    }
 }
 
 .benefit__item {
     padding-top: 4.5rem;
+    position: relative;
 
     & .subtitle {
         margin-top: 0;
     }
-}
 
+    &::before {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        background-color: $color-dark;
+        height: 1px;
+        width: 36px;
+        top: 60px;
+        left: -36px;
+        }
+}
